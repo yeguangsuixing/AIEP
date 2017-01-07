@@ -60,7 +60,12 @@ public class AIEPP_FIR {
 		} else if( AIEP.PLATFORM == SystemPlatform.X64 ) {
 			System.load( new File("FIR_AICppLoader(x64).dll").getAbsolutePath() );
 		}
-		System.load( new File("FIR_AICSharpLoader.dll").getAbsolutePath());
+		try{
+			System.load( new File("FIR_AICSharpLoader.dll").getAbsolutePath());
+		}catch(Error e){
+			System.out.print(e.getMessage());
+		}
+		
 	}
 	
 }

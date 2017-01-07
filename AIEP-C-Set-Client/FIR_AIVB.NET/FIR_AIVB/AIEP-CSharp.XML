@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AIEP-CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:AICS.AI">
+            <summary>
+            AI Interface, every AI Class should implement the interface
+            </summary>
+        </member>
+        <member name="M:AICS.AI.getId">
+            <summary>
+            Get the ID of the AI
+            </summary>
+            <returns>the ID of the AI</returns>
+        </member>
+        <member name="M:AICS.AI.getName">
+            <summary>
+            Get the name of the AI
+            </summary>
+            <returns>the name of the AI</returns>
+        </member>
+        <member name="M:AICS.AI.getNickname">
+            <summary>
+            Get the nickname of the AI
+            </summary>
+            <returns>the nickname of the AI</returns>
+        </member>
+        <member name="M:AICS.AI.isPrintInfo">
+            <summary>
+            Whether print the received info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AICS.AI.getVersion">
+            <summary>
+            Get the version of the AI
+            </summary>
+            <returns>the version of the AI</returns>
+        </member>
+        <member name="F:AICS.Status.OFFENSIVE">
+            <summary>
+            the offensive of the inning
+            </summary>
+        </member>
+        <member name="F:AICS.Status.DEFENSIVE">
+            <summary>
+            the defensive of the inning
+            </summary>
+        </member>
+        <member name="F:AICS.Status.EMPTY">
+            <summary>
+            empty status, in the chess board
+            </summary>
+        </member>
+        <member name="T:AICS.StudentInfo">
+            <summary>
+            the student info
+            </summary>
+        </member>
+        <member name="M:AICS.StudentInfo.getNickname">
+            <summary>
+            Get the nickname of the student
+            </summary>
+            <returns>the nickname of the student</returns>
+        </member>
+        <member name="M:AICS.StudentInfo.getName">
+            <summary>
+            Get the name of the student
+            </summary>
+            <returns>the name of the student</returns>
+        </member>
+        <member name="M:AICS.StudentInfo.getId">
+            <summary>
+            Get the ID of the student
+            </summary>
+            <returns>the ID of the student</returns>
+        </member>
+        <member name="M:AICS.StudentInfo.setNickname(System.String)">
+            <summary>
+            Set the nickname of the student
+            </summary>
+            <param name="nickname">the new nickname of the student</param>
+        </member>
+        <member name="M:AICS.StudentInfo.setName(System.String)">
+            <summary>
+            Set the name of the student
+            </summary>
+            <param name="name">the new name of the student</param>
+        </member>
+        <member name="M:AICS.StudentInfo.setId(System.String)">
+            <summary>
+            Set the id  of the student
+            </summary>
+            <param name="id">the new id of the student</param>
+        </member>
+    </members>
+</doc>

@@ -3,8 +3,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AIEPServer"/>
-	<classpathentry kind="lib" path="F:/Programming Resource/javalibext/org.json.jar"/>
-	<classpathentry kind="lib" path="F:/Programming Resource/javalibext/fastjson-1.0.4.jar"/>
-	<classpathentry kind="lib" path="F:/Programming Resource/javalibext/jython-2.5.0.jar"/>
+	<classpathentry kind="lib" path="/AIEPServer/lib/fastjson-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/AIEPServer/lib/jython-2.5.0.jar"/>
+	<classpathentry kind="lib" path="/AIEPServer/lib/org.json.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

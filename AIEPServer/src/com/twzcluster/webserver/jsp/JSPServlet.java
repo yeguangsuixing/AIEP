@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.njucs.aiep.base.ClassOperator;
+import com.sun.tools.javac.main.Main.Result;
 import com.twzcluster.webserver.TWZWebServer;
 
 //import com.ygsx.frame.ClassOperator;
@@ -48,8 +49,8 @@ public class JSPServlet extends HttpServlet {
 		// 3.转换jsp->java
 		jspEngineer.parse(jspFile, javaFile, className);
 		// 4.编译，即转换java->class
-		int c = javac.compile(new String[] { "-d", CLASS_PATH, javaFile });// 编译通过返回0
-		if (c != 0) {
+		Result c = javac.compile(new String[] { "-d", CLASS_PATH, javaFile });// 编译通过返回0
+		if (c.exitCode != 0) {
 			throw new ServletException("compiling error");
 		}
 		try {

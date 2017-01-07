@@ -1,0 +1,17 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {7E59310E-D03B-43F9-958E-E798FAB1F2F5} = s 'FirAI Class'
+		{
+			ForceRemove Programmable
+			LocalServer32 = s '%MODULE%'
+			{
+				val ServerExecutable = s '%MODULE_RAW%'
+			}
+			val AppID = s '%APPID%'
+			TypeLib = s '{33284AC8-AFFD-40DC-A6DB-D8AF3D70AFCD}'
+			Version = s '1.0'
+		}
+	}
+}

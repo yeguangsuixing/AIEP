@@ -1,0 +1,46 @@
+// FIR_AIX64Service.idl : FIR_AIX64Service 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(FIR_AIX64Service.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(307AB1F5-1C26-4D7D-9DB9-918F3C32CCCE),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFirAI : IDispatch{
+	[id(1)] HRESULT setCurrentAIIndex([in] LONG aiIndex);
+	[id(2)] HRESULT addFirAIDll([in] BSTR firAIDllFileName, [out] LONG* errorId, [out,retval] LONG* returnValue);
+	[id(3)] HRESULT getId([out]LONG* errorId, [out,retval] BSTR* aiId);
+	[id(4)] HRESULT test([out,retval] LONG* value);
+	[id(5)] HRESULT itsmyturn([in] LONG lastStepX, [in] LONG lastStepY, [in] LONG lastStepStatus, [out] LONG* newStepX, [out] LONG* newStepY, [out] LONG* newStepStatus);
+	[id(6)] HRESULT itsmyturn2([in] LONG lastStepX, [in] LONG lastStepY, [in] LONG lastStepStatus, [out] LONG* newStepX, [out] LONG* newStepY, [out] LONG* newStepStatus);
+	[id(7)] HRESULT setInningInfo([in] LONG myStatus, [in] LONG limitedTime, [in] BSTR opponentId, [in] BSTR opponentName, [in] BSTR opponentNickname, [in] LONG* piecesIntArray);
+	[id(8)] HRESULT getName([out,retval] BSTR* aiName);
+	[id(9)] HRESULT getNickname([out,retval] BSTR* aiNickname);
+	[id(10)] HRESULT getVersion([out,retval] BSTR* aiVersion);
+	[id(11)] HRESULT isPrintInfo([out,retval] LONG* print);
+	[id(12)] HRESULT setProgramLanguage([in] LONG language);
+};
+[
+	uuid(33284AC8-AFFD-40DC-A6DB-D8AF3D70AFCD),
+	version(1.0),
+]
+library FIR_AIX64ServiceLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(7E59310E-D03B-43F9-958E-E798FAB1F2F5)		
+	]
+	coclass FirAI
+	{
+		[default] interface IFirAI;
+	};
+};
+

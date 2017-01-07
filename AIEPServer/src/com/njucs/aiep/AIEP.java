@@ -37,7 +37,7 @@ import com.twzcluster.webserver.TWZWebServer;
 public class AIEP {
 	
 	public static enum SystemPlatform { X86, X64 };
-	public final static SystemPlatform PLATFORM = SystemPlatform.X86;
+	public final static SystemPlatform PLATFORM = SystemPlatform.X64;
 	public final static boolean USE_STYLE = true;
 	
 	public static enum AiepRole  { AIArena, AIJudge, AISite };
