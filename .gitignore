@@ -1,0 +1,10 @@
+.metadata
+/RemoteSystemsTempFiles
+*/.metadata
+*/.idea
+*/.settings
+*/bin/*
+AIEPServer/succeed/*
+AIEPServer/z-realdata/*
+AIEPServer/upload/*
+AIEPServer/res/data/*

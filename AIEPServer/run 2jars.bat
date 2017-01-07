@@ -1,0 +1,2 @@
+java -jar "F:\Workspace\AIEPServer\aiep(32-bit).jar" judge com.njucs.aiep.plugin.fir.FIRJudge 8894 2 upload/2013_07_11_17_54_25_547886527_MyFirAI.py upload/2013_07_11_17_59_23_1643752477__v0_2_3.jar
+pause
